@@ -1,4 +1,4 @@
-import { Box, Keyboard } from 'grommet';
+import { Box, BoxProps, Keyboard } from 'grommet';
 import * as React from 'react';
 
 export interface IProps {
@@ -32,7 +32,7 @@ const createTouch = (event: React.TouchEvent<HTMLDivElement>) :(ITouch | undefin
 class Viewer extends React.Component<IProps, IState> {
   public readonly state: Readonly<IState> = { current: 0 }
 
-  private ref = React.createRef<HTMLDivElement>();
+  private ref = React.createRef<React.Component<BoxProps & JSX.IntrinsicElements['div']> & HTMLDivElement>();
 
   private touchStart?: ITouch;
 
