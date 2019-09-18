@@ -1,4 +1,4 @@
-# grommet slide viewer
+# grommet slides
 
 Fork this repository to create a web-based slide presentation.
 

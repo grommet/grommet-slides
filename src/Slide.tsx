@@ -1,5 +1,5 @@
-import { Box, BoxProps, Markdown, MarkdownProps } from 'grommet';
-import * as React from 'react';
+import { Box, BoxProps, Markdown, MarkdownProps } from 'grommet'
+import * as React from 'react'
 
 export interface IProps {
   align?: BoxProps['align'],
@@ -37,4 +37,4 @@ Slide.defaultProps = {
   justify: 'center',
  }
 
-export default Slide;
+export default Slide
